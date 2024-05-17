@@ -6,9 +6,20 @@ import java.util.List;
 
 public interface IDontologoService {
     Odontologo registrarOdontologo(Odontologo odontologo);
-    List<Odontologo> listarOdontologos = null;
+
+    Odontologo buscarPorId(Integer id);
 
     void Odontologo(Odontologo odontologo);
 
-    CharSequence listarOdontologos();
+    List<Odontologo> listaOdontologos();
+
+    Odontologo registrar(Odontologo odontologo);
+
+    Odontologo buscarPorID(Integer id);
+
+    void actualizar(Odontologo odontologo);
+
+    void eliminar(Integer id);
+
+    List<Odontologo> buscarTodos();
 }

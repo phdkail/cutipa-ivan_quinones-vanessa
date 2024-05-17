@@ -1,30 +1,49 @@
 package com.backend.dbconnection;
 
+import com.backend.model.Odontologo;
+import org.apache.log4j.Logger;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class H2Connection {
-    public static Connection getConnection() throws ClassNotFoundException, SQLException {
-        Class.forName("org.h2.Driver");
-        return DriverManager.getConnection("jdbc:h2:~/OdontologosParcial", "sa", "sa");
+    public static final Logger logger= Logger.getLogger(H2Connection.class);
+
+    private static final String SQL_PRUEBA= "INSERT INTO ODONTOLOGOS (NUMERO_MATRICULA, NOMBRE, APELLIDO) VALUES ('ABC123','Juan','Lopez'), ('DEF456','Roberto','Perez');";
+
+    private static final String SQL_DROP_CREATE_ODONTOLOGOS="DROP TABLE IF EXISTS ODONTOLOGOS; " +
+            "CREATE TABLE ODONTOLOGOS (ID INT AUTO_INCREMENT PRIMARY KEY, NUMERO_MATRICULA VARCHAR(100)  NOT NULL, NOMBRE VARCHAR(100)  NOT NULL, APELLIDO VARCHAR(100)  NOT NULL)";
+
+    public static void crearTablas(){
+        Connection connection= null;
+        try{
+            connection= getConnection();
+            Statement statement= connection.createStatement();
+            statement.execute(SQL_DROP_CREATE_ODONTOLOGOS);
+            logger.info("Tabla odontologo creada con exito");
+            statement.execute(SQL_PRUEBA);
+            logger.info("tablas creadas con exito");
+
+        }catch (Exception e){
+            logger.warn(e.getMessage());
+        }
+
     }
 
-    public static void ejecutarScriptInicial() {
-        Connection connection = null;
+    public static List<Odontologo> listarTodos = new ArrayList<Odontologo>();
 
-        try (Connection conn = DriverManager.getConnection("jdbc:h2:~/OdontologosParcial", "sa", "sa");
-             Statement stmt = conn.createStatement()) {
-            String sql = "CREATE TABLE IF NOT EXISTS ODONTOLOGOS (" +
-                    "ID INT AUTO_INCREMENT PRIMARY KEY, " +
-                    "NOMBRE VARCHAR(255), " +
-                    "APELLIDO VARCHAR(255), " +
-                    "NUMEROMATRICULA VARCHAR(255))";
-            stmt.executeUpdate(sql);
-            System.out.println("Tabla creada correctamente.");
-        } catch (SQLException e) {
-            System.out.println("Error al crear la tabla: " + e.getMessage());
-        }
+    public static void agregarOdontologosLista() {
+        listarTodos.add(new Odontologo("ad4345","MARIA","PEREZ"));
+        listarTodos.add(new Odontologo("sdfgsdf","LUIS","RODRIGUEZ"));
+        logger.info("Odontologos agregados a la lista con exito");
+    }
+
+    public static Connection getConnection() throws Exception{
+        Class.forName("org.h2.Driver");
+        return DriverManager.getConnection("jdbc:h2:~/Odontologos","sa","");
     }
 }

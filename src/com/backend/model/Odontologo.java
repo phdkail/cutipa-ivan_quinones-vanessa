@@ -1,23 +1,21 @@
 package com.backend.model;
 
 public class Odontologo {
-    private int id;
+    private String id;
     private String nombre;
     private String apellido;
-    private int numeroMatricula;
 
-    public Odontologo(int id, String nombre, String apellido, int numeroMatricula) {
+    public Odontologo(String id, String nombre, String apellido) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.numeroMatricula = numeroMatricula;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -25,30 +23,23 @@ public class Odontologo {
         return apellido;
     }
 
-    public int getNumeroMatricula() {
-        return numeroMatricula;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id = String.valueOf(id);
     }
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
-    public void setNumeroMatricula(int numeroMatricula) {
-        this.numeroMatricula = numeroMatricula;
-    }
 
     @Override
 
     public String toString(){
-        return "Id: " + id + "- Nombre: " + nombre + "- Apellido " + apellido + "-Numero de matricula: " + numeroMatricula;
+        return "Id: " + id + "- Nombre: " + nombre + "- Apellido " + apellido + "-Numero de matricula: ";
     }
 }
 
