@@ -46,7 +46,7 @@ import java.util.List;
             List<Odontologo> listaOdontologos = odontologoService.listaOdontologos();
             assertFalse(listaOdontologos.isEmpty(), "La lista de odontólogos no debería estar vacía");
 
-            // Verificar si la lista contiene un odontólogo con el mismo ID que el odontólogo registrado
+
             boolean containsOdontologo = listaOdontologos.stream()
                     .anyMatch(o -> o.getId().equals(odontologo.getId()));
 
