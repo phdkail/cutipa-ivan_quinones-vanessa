@@ -16,7 +16,7 @@ class OdontologoServiceTest {
 
         //arrange
         odontologoService = new OdontologoService(new OdontologoDaoH2());
-        Odontologo odontologoAPersistir = new Odontologo("Pedro", "Perez", "a23234");
+        Odontologo odontologoAPersistir = new Odontologo("JOSUE", "ROSALES", "S45GD4");
         //act
         Odontologo odontologoPersistido = odontologoService.registrarOdontologo(odontologoAPersistir);
         //assert

@@ -46,3 +46,6 @@ Column "NOMBRE" not found [42122-224]
 [2024-05-23 22:16:57] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "NOMBRE" no encontrada
 Column "NOMBRE" not found [42122-224]
 [2024-05-23 22:22:06] [ INFO ] [OdontologoDaoH2:40] Odontologo guardado: Id: 2- Nombre: Pedro- Apellido Perez-Numero de matricula: 
+[2024-05-23 22:25:19] [ INFO ] [OdontologoDaoH2:40] Odontologo guardado: Id: 3- Nombre: RAMIRO- Apellido ALVAREZ-Numero de matricula: 
+[2024-05-23 22:26:41] [ INFO ] [OdontologoDaoH2:40] Odontologo guardado: Id: 4- Nombre: RAMIRO- Apellido ALVAREZ-Numero de matricula: 
+[2024-05-23 22:30:42] [ INFO ] [OdontologoDaoH2:40] Odontologo guardado: Id: 5- Nombre: JOSUE- Apellido ROSALES-Numero de matricula: + S45GD4
