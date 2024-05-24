@@ -1,40 +1,56 @@
 package com.backend.model;
 
 public class Odontologo {
-    private String id;
+    private Long id;
     private String nombre;
     private String apellido;
+    private String matricula;
 
-    public Odontologo(String id, String nombre, String apellido) {
+
+    public Odontologo(Long id, String nombre, String apellido, String matricula) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
+        this.matricula = matricula;
+    }
+
+    public Odontologo(String nombre, String apellido, String matricula) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.matricula = matricula;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public String getId() {
-        return id;
-    }
-
     public String getApellido() {
         return apellido;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setId(int id) {
-        this.id = String.valueOf(id);
-    }
-
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
 
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
 
     @Override
 
