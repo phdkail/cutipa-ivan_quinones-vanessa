@@ -1,10 +1,7 @@
-package com.backend.test;
-
-import com.backend.repository.dbconnection.H2Connection;
+package com.backend;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class Application {
 

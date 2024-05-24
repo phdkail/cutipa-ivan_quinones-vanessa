@@ -1,0 +1,48 @@
+[2024-05-23 21:50:14] [ ERROR] [OdontologoDaoH2:43] Columna "id" no encontrada
+Column "id" not found [42122-224]
+[2024-05-23 21:50:14] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "id" no encontrada
+Column "id" not found [42122-224]
+[2024-05-23 21:52:28] [ ERROR] [OdontologoDaoH2:43] Columna "id" no encontrada
+Column "id" not found [42122-224]
+[2024-05-23 21:52:28] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "id" no encontrada
+Column "id" not found [42122-224]
+[2024-05-23 21:56:25] [ ERROR] [OdontologoDaoH2:43] Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 21:56:25] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 21:57:32] [ ERROR] [OdontologoDaoH2:43] Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 21:57:32] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:00:40] [ ERROR] [OdontologoDaoH2:43] Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:00:40] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:02:49] [ ERROR] [OdontologoDaoH2:43] Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:02:49] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:05:57] [ ERROR] [OdontologoDaoH2:43] La base de datos puede que ya esté siendo utilizada: "C:/Users/vbqci/Odontologos.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/vbqci/Odontologos.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-23 22:05:57] [ ERROR] [OdontologoDaoH2:60] No se pudo cerrar la conexion: Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-05-23 22:06:48] [ ERROR] [OdontologoDaoH2:43] Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:06:48] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "nombre" no encontrada
+Column "nombre" not found [42122-224]
+[2024-05-23 22:10:11] [ ERROR] [OdontologoDaoH2:43] Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:10:11] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:12:09] [ ERROR] [OdontologoDaoH2:43] Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:12:09] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:14:34] [ ERROR] [OdontologoDaoH2:43] Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:14:34] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:16:57] [ ERROR] [OdontologoDaoH2:43] Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:16:57] [ ERROR] [OdontologoDaoH2:49] Tuvimos un problema. Columna "NOMBRE" no encontrada
+Column "NOMBRE" not found [42122-224]
+[2024-05-23 22:22:06] [ INFO ] [OdontologoDaoH2:40] Odontologo guardado: Id: 2- Nombre: Pedro- Apellido Perez-Numero de matricula: 
